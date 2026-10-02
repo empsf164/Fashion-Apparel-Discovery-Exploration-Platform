@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Map — Fashion Has a Location | MODE / ATLAS</title>
+  <meta name="description" content="Discover global fashion where it happens. Interactive geographic mapping of ateliers, creators, boutiques, and street subcultures worldwide.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body style="height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Mandatory Navbar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo"><span>MODE</span><span class="brand-slash">/</span><span>ATLAS</span></a>
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="stories.html" class="nav-link">Stories</a>
+        <a href="creators.html" class="nav-link">Creators</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" data-action="open-search" aria-label="Search">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <span>Search</span>
+          <kbd class="search-shortcut-kbd">⌘K</kbd>
+        </button>
+
+        <button class="theme-toggle-btn" data-action="toggle-theme" aria-label="Theme"><svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo"><span>MODE</span><span class="brand-slash">/</span><span>ATLAS</span></a>
+      <button class="btn-icon" id="mobileNavClose"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <nav class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="discover.html" class="mobile-nav-link">Discover</a>
+      <a href="videos.html" class="mobile-nav-link">Videos</a>
+      <a href="stories.html" class="mobile-nav-link">Stories</a>
+      <a href="creators.html" class="mobile-nav-link">Creators</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+    </div>
+  </aside>
+
+  <!-- Interactive Map Main Container (Split Screen Layout) -->
+  <main style="flex: 1; display: flex; flex-direction: column;">
+    <!-- Map Control Topbar -->
+    <div style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-subtle); padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <span class="kicker" style="margin: 0;">GEOGRAPHIC ENGINE</span>
+        <h1 style="font-size: 1.15rem; font-weight: 700; margin: 0;">Fashion Has a Location.</h1>
+      </div>
+
+      <!-- City Jumpers -->
+      <div style="display: flex; gap: 0.35rem; overflow-x: auto; max-width: 100%;">
+        <button class="filter-pill active" data-map-city="tokyo" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Tokyo</button>
+        <button class="filter-pill" data-map-city="paris" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Paris</button>
+        <button class="filter-pill" data-map-city="seoul" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Seoul</button>
+        <button class="filter-pill" data-map-city="milan" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Milan</button>
+        <button class="filter-pill" data-map-city="london" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">London</button>
+        <button class="filter-pill" data-map-city="new york" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">New York</button>
+        <button class="filter-pill" data-map-city="all" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Global View</button>
+      </div>
+
+      <!-- Category Filter Pills for Map -->
+      <div style="display: flex; gap: 0.35rem; align-items: center;">
+        <button class="map-filter-pill filter-pill active" data-map-category="all" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">All Markers</button>
+        <button class="map-filter-pill filter-pill" data-map-category="creator" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">● Creator</button>
+        <button class="map-filter-pill filter-pill" data-map-category="boutique" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">● Boutique</button>
+        <button class="map-filter-pill filter-pill" data-map-category="district" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">● District</button>
+        <button class="map-filter-pill filter-pill" data-map-category="event" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">● Event</button>
+      </div>
+    </div>
+
+    <!-- Map Split Layout -->
+    <div class="map-page-layout">
+      <!-- Left: Interactive Map Container -->
+      <div class="map-viewport-container">
+        <div id="fashionMap"></div>
+      </div>
+
+      <!-- Right: Discovery Sidebar List -->
+      <aside class="map-sidebar-list">
+        <div class="map-sidebar-header">
+          <span class="kicker">DISCOVERIES IN REGION</span>
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-top: 0.25rem;">Active Coordinates</h3>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Click any location or marker on the map to zoom & inspect.</p>
+        </div>
+
+        <div class="map-sidebar-content" id="mapSidebarItems">
+          <!-- Dynamically populated by assets/js/map.js -->
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Search & Saved Modals -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true">
+    <div class="search-modal-container">
+      <div class="search-modal-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" id="globalSearchInput" class="search-input-field" placeholder="Search places, creators, districts...">
+        <button class="btn-icon" id="searchModalClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="search-modal-body"><div id="searchResultsContainer" style="display: none;"></div></div>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="savedBackdrop"></div>
+  <aside class="saved-drawer" id="savedDrawer">
+    <div class="saved-drawer-header">
+      <div><span class="kicker">MY SELECTIONS</span><h3 style="font-size: 1.25rem;">Saved Discoveries <span id="savedDrawerCount">(0)</span></h3></div>
+      <button class="btn-icon" data-action="close-saved"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="saved-drawer-content" id="savedDrawerContent"></div>
+  </aside>
+
+  <div class="toast-container"></div>
+
+  <!-- Leaflet & App JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/bookmarks.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

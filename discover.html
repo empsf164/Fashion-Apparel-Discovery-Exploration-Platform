@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Fashion — MODE / ATLAS Discovery Engine</title>
+  <meta name="description" content="Discover global apparel, creator dispatches, fashion stories, boutiques, and architectural tailoring across worldwide fashion capitals.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="MODE / ATLAS Home">
+        <span>MODE</span>
+        <span class="brand-slash">/</span>
+        <span class="brand-name-full">ATLAS</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link active">Discover</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="stories.html" class="nav-link">Stories</a>
+        <a href="creators.html" class="nav-link">Creators</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" data-action="open-search" aria-label="Search Platform">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <span>Search</span>
+          <kbd class="search-shortcut-kbd">⌘K</kbd>
+        </button>
+
+
+
+        <button class="theme-toggle-btn" data-action="toggle-theme" aria-label="Toggle Theme">
+          <svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileNavDrawer">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo"><span>MODE</span><span class="brand-slash">/</span><span>ATLAS</span></a>
+        <button class="btn-icon" id="mobileNavClose" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <nav class="mobile-drawer-nav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="discover.html" class="mobile-nav-link active">Discover</a>
+        <a href="videos.html" class="mobile-nav-link">Videos</a>
+        <a href="stories.html" class="mobile-nav-link">Stories</a>
+        <a href="creators.html" class="mobile-nav-link">Creators</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Discover Header -->
+    <section class="section-spacing" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div style="max-width: 780px; margin: 0 auto; text-align: center;">
+          <span class="kicker">DISCOVERY ENGINE</span>
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin: 0.5rem 0 1rem;">
+            Explore Fashion
+          </h1>
+          <p class="lead-text">
+            Search apparel pieces, creator dispatches, fashion stories, boutiques, and architectural tailoring shaping contemporary style across the globe.
+          </p>
+
+          <!-- Inline Search Bar -->
+          <div style="margin-top: 2rem; position: relative;">
+            <input type="text" id="discoveryInlineSearch" class="form-input" placeholder="Search apparel, creators, places, trends, collections..." style="padding-left: 3rem; font-size: 1.05rem; height: 56px; border-radius: var(--radius-full); background-color: var(--bg-secondary);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position: absolute; left: 1.25rem; top: 18px; color: var(--text-muted);">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Dimensional Filter Bar -->
+    <div class="filter-bar-container">
+      <div class="container filter-bar-inner">
+        <!-- Content Type & Category Pills -->
+        <div class="filter-pills-scroll">
+          <button class="filter-pill active" data-filter-group="type" data-filter-value="all">All Content</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="video">Videos</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="story">Stories</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="creator">Creators</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="place">Places</button>
+          <button class="filter-pill" data-filter-group="category" data-filter-value="apparel">Apparel</button>
+          <button class="filter-pill" data-filter-group="category" data-filter-value="accessories">Accessories</button>
+          <button class="filter-pill" data-filter-group="category" data-filter-value="footwear">Footwear</button>
+        </div>
+
+        <!-- Secondary Dropdowns & Sort -->
+        <div class="filter-controls-right">
+          <!-- Style Filter -->
+          <select id="filterStyleSelect" class="filter-select" aria-label="Filter by style">
+            <option value="all">All Styles</option>
+            <option value="minimal">Minimal</option>
+            <option value="streetwear">Streetwear</option>
+            <option value="vintage">Vintage</option>
+            <option value="avant-garde">Avant-Garde</option>
+            <option value="classic">Classic</option>
+            <option value="experimental">Experimental</option>
+          </select>
+
+          <!-- Location Filter -->
+          <select id="filterLocationSelect" class="filter-select" aria-label="Filter by location">
+            <option value="all">All Locations</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="paris">Paris</option>
+            <option value="seoul">Seoul</option>
+            <option value="milan">Milan</option>
+            <option value="london">London</option>
+            <option value="new york">New York</option>
+          </select>
+
+          <!-- Sort Select -->
+          <select id="filterSortSelect" class="filter-select" aria-label="Sort discoveries">
+            <option value="trending">Trending</option>
+            <option value="latest">Latest</option>
+            <option value="saved">Most Saved</option>
+            <option value="editor">Editor's Picks</option>
+          </select>
+
+          <!-- Clear Filters -->
+          <button id="clearFiltersBtn" class="btn btn-secondary" data-action="clear-filters" style="display: none; padding: 0.45rem 0.85rem; font-size: 0.75rem;">
+            Clear Filters
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discovery Grid Container -->
+    <section class="section-spacing" style="padding-top: 1rem;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <span class="font-mono" id="discoveryResultCount" style="font-size: 0.8125rem; color: var(--text-muted);">
+            Showing Discoveries
+          </span>
+        </div>
+
+        <!-- Editorial Masonry / Discovery Grid -->
+        <div class="discovery-grid" id="discoveryGrid">
+          <!-- Discovery 1: Creator Video -->
+          <article class="fashion-card video-card" data-discovery-card data-type="video" data-category="streetwear video" data-style="streetwear" data-location="tokyo">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Inside a Tokyo Vintage Archive" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              <button class="video-play-badge" data-action="play-video" data-video-id="video-1" aria-label="Play Video"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Tokyo, Japan</span>
+              <span class="badge-duration">02:48</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="video-1" data-bookmark-title="Inside a Tokyo Vintage Archive" data-bookmark-category="Street Style" data-bookmark-location="Tokyo, Japan" data-bookmark-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" data-bookmark-type="video" data-bookmark-url="video-details.html?id=video-1" aria-label="Save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Video · Street Style</span>
+              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="video-details.html?id=video-1">Inside a Tokyo Vintage Archive</a></h3>
+              <div class="creator-chip">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Mika Tanaka" class="creator-avatar-sm">
+                <span class="creator-name-sm"><a href="creator-profile.html?id=mika-tanaka">Mika Tanaka</a> · Tokyo</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Discovery 2: Story Card -->
+          <article class="fashion-card story-card" data-discovery-card data-type="story" data-category="apparel story luxury" data-style="minimal" data-location="milan">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="The Return of Quiet Tailoring" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Milan, Italy</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-1" data-bookmark-title="The Return of Quiet Tailoring" data-bookmark-category="Trend Report" data-bookmark-location="Milan, Italy" data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-1" aria-label="Save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span class="kicker" style="font-size: 0.6875rem;">Story · Trend Report</span>
+                <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">6 Min Read</span>
+              </div>
+              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="story-details.html?id=story-1">The Return of Quiet Tailoring</a></h3>
+              <p class="story-excerpt">Sartorial restraint, unpadded wool shoulders, and the revival of Milanese silhouette craft.</p>
+            </div>
+          </article>
+
+          <!-- Discovery 3: Creator Atelier Showcase -->
+          <article class="fashion-card creator-card" data-discovery-card data-type="creator" data-category="creator apparel luxury" data-style="avant-garde" data-location="paris">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="Sculptural Draping & Pattern Craft" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Paris, France</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="creator-2" data-bookmark-title="Camille Laurent — Pattern Atelier" data-bookmark-category="Couture Pattern Lab" data-bookmark-location="Paris, France" data-bookmark-image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" data-bookmark-type="creator" data-bookmark-url="creator-profile.html?id=camille-laurent" aria-label="Bookmark Creator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Atelier · Pattern Lab</span>
+              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="creator-profile.html?id=camille-laurent">Sculptural Draping & Tailoring</a></h3>
+              <div class="creator-chip">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Camille Laurent" class="creator-avatar-sm">
+                <span class="creator-name-sm"><a href="creator-profile.html?id=camille-laurent">Camille Laurent</a> · Paris</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Discovery 4: Location / District Card -->
+          <article class="fashion-card" data-discovery-card data-type="place" data-category="place streetwear" data-style="experimental" data-location="seoul">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=800&q=80" alt="Seongsu-dong Industrial Fashion District" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Seoul, South Korea</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="loc-3" data-bookmark-title="Seongsu-dong Fashion District" data-bookmark-category="District" data-bookmark-location="Seoul, South Korea" data-bookmark-image="https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=800&q=80" data-bookmark-type="location" data-bookmark-url="explore-map.html?loc=seoul" aria-label="Bookmark Location">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Fashion District</span>
+              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="explore-map.html?loc=seoul">Seongsu-dong Industrial Hub</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">12 Discoveries · 8 Flagships · 4 Creators</p>
+            </div>
+          </article>
+
+          <!-- Discovery 5: Curated Editorial Look -->
+          <article class="fashion-card" data-discovery-card data-type="story" data-category="apparel story minimal" data-style="minimal" data-location="paris">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="The New Minimal Look" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Paris, France</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="col-1" data-bookmark-title="The New Minimal" data-bookmark-category="Editorial Look" data-bookmark-location="Paris, France" data-bookmark-image="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-1" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Editorial · The New Minimal</span>
+              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="story-details.html?id=story-1">Architectural Outerwear & Draped Wool</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">18 Apparel · 4 Creators · Paris & Milan</p>
+            </div>
+          </article>
+
+          <!-- Discovery 6: Apparel Piece Details -->
+          <article class="fashion-card" data-discovery-card data-type="apparel" data-category="accessories vintage" data-style="vintage" data-location="london">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Archival Saddle Leather Bag" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">London, UK</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-3" data-bookmark-title="Archival Saddle Leather Shoulder Bag" data-bookmark-category="Accessories" data-bookmark-location="London, UK" data-bookmark-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" data-bookmark-type="apparel" data-bookmark-url="discover.html?category=accessories" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Apparel · Accessories</span>
+              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="discover.html?category=accessories">Saddle Leather Shoulder Bag</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Shoreditch Resale Archive · Circa 1994</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- No Results Empty State -->
+        <div id="discoveryEmptyState" class="empty-results-box" style="display: none; margin-top: 2rem;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--accent-rust);">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <h3 style="font-size: 1.25rem;">No discoveries match this filter criteria</h3>
+          <p style="color: var(--text-secondary); max-width: 480px;">Try loosening your filters or clear all filters to see our full catalogue of global discoveries.</p>
+          <button class="btn btn-secondary" data-action="clear-filters">Clear All Active Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         Section: Global Movement Taxonomy
+         ========================================== -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="kicker">DESIGN PARADIGMS</span>
+            <h2 class="section-title">Global Movement Taxonomy</h2>
+            <p class="section-subtitle">A curated index of the aesthetic frameworks and fabrication philosophies currently shaping global fashion apparel.</p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <!-- Paradigm 1 -->
+          <div class="fashion-card" style="padding: 2rem; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem;">
+              <span class="badge badge-location">Tokyo · Kyoto</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--accent-rust);">01 / ARCHIVE</span>
+            </div>
+            <h3 style="font-size: 1.35rem; font-family: var(--font-editorial); margin-bottom: 0.6rem;">Zero-Waste Architectural Draping</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              Pattern cutting techniques that utilize 100% of the woven textile width, eliminating fabric scrap through origami folding and monolithic rectangular patterns.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; gap: 0.4rem;">
+              <span class="badge">14oz Selvedge</span>
+              <span class="badge">Uncut Wool</span>
+              <span class="badge">Origami Pleat</span>
+            </div>
+          </div>
+
+          <!-- Paradigm 2 -->
+          <div class="fashion-card" style="padding: 2rem; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem;">
+              <span class="badge badge-location">Milan · Biella</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--accent-rust);">02 / SARTORIAL</span>
+            </div>
+            <h3 style="font-size: 1.35rem; font-family: var(--font-editorial); margin-bottom: 0.6rem;">Deconstructed Canvas Canvas</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              Stripping away shoulder pads, heavy fusibles, and chest padding to create featherweight tailored blazers that drape like shirts while retaining sharp lines.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; gap: 0.4rem;">
+              <span class="badge">Horsehair Canvas</span>
+              <span class="badge">Cashmere Flannel</span>
+              <span class="badge">Hand-Rolled Hem</span>
+            </div>
+          </div>
+
+          <!-- Paradigm 3 -->
+          <div class="fashion-card" style="padding: 2rem; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem;">
+              <span class="badge badge-location">Seoul · Seongsu</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--accent-rust);">03 / HYPER-MODERN</span>
+            </div>
+            <h3 style="font-size: 1.35rem; font-family: var(--font-editorial); margin-bottom: 0.6rem;">Industrial Micro-Run Utility</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              Small-batch outerwear produced in 48-hour sprints combining military webbing, waterproof membrane laminates, and modular pocket attachments.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; gap: 0.4rem;">
+              <span class="badge">Cordura Ripstop</span>
+              <span class="badge">Fidlock Magnetic</span>
+              <span class="badge">Taped Seams</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         Section: Fabric Origins & Living Textures
+         ========================================== -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="kicker">MATERIAL ARCHIVES</span>
+            <h2 class="section-title">Fabric Origins & Living Textures</h2>
+            <p class="section-subtitle">Inspect the provenance, tactile weight, and heritage weaving methods documented across global fashion ateliers.</p>
+          </div>
+          <a href="stories.html" class="btn btn-secondary">Read Material Essays →</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <!-- Material Card 1 -->
+          <div class="fashion-card" style="border-radius: var(--radius-xl); overflow: hidden;">
+            <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80" alt="Japanese Selvedge Loom" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge" style="position: absolute; top: 1rem; left: 1rem; background: rgba(10,10,12,0.85); color: #fff; border-color: var(--border-medium);">Kojima, Okayama</span>
+            </div>
+            <div style="padding: 1.75rem;">
+              <span class="font-mono" style="font-size: 0.72rem; color: var(--accent-rust); text-transform: uppercase;">Shuttle Loomed Denim</span>
+              <h3 style="font-size: 1.25rem; margin: 0.35rem 0 0.6rem;">15.5oz Natural Hon-Ai Indigo Selvedge</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                Woven on vintage Toyoda GL9 shuttle looms at ultra-low tension, creating an irregular slub texture that records the physical movement of the wearer through high-contrast fades.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.85rem;">
+                <span>Weave: 3x1 Right Hand Twill</span>
+                <span class="font-mono">Weight: 440 GSM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Material Card 2 -->
+          <div class="fashion-card" style="border-radius: var(--radius-xl); overflow: hidden;">
+            <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="Wool Double-Faced Fabric" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="badge" style="position: absolute; top: 1rem; left: 1rem; background: rgba(10,10,12,0.85); color: #fff; border-color: var(--border-medium);">Biella, Piedmont</span>
+            </div>
+            <div style="padding: 1.75rem;">
+              <span class="font-mono" style="font-size: 0.72rem; color: var(--accent-rust); text-transform: uppercase;">Double-Faced Wool</span>
+              <h3 style="font-size: 1.25rem; margin: 0.35rem 0 0.6rem;">Super 160s Unlined Cashmere Wool</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                Two layers of superfine merino and Mongolian cashmere bonded together during the weaving process, allowing atelier artisans to split the edges and hand-sew seams invisible to the eye.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.85rem;">
+                <span>Finish: Water-Repellent Brushed</span>
+                <span class="font-mono">Weight: 520 GSM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4-Column Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Philosophy -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <span>MODE</span>
+            <span class="brand-slash">/</span>
+            <span>ATLAS</span>
+          </a>
+          <p class="footer-tagline">
+            Discover What Fashion Is Becoming.
+          </p>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); max-width: 320px; margin-bottom: 1.5rem;">
+            A global exploration platform dedicated to creator video feeds, fashion journalism, interactive mapping, and curated apparel archives.
+          </p>
+
+          <!-- Newsletter Dispatches -->
+          <form data-form="newsletter" style="display: flex; gap: 0.5rem; max-width: 340px;">
+            <input type="email" placeholder="Your email for dispatches..." required class="form-input" style="padding: 0.6rem 0.9rem; font-size: 0.8125rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.1rem; font-size: 0.8125rem;">Join</button>
+          </form>
+        </div>
+
+        <!-- Col 2: Discover Links -->
+        <div>
+          <h4 class="footer-col-title">Discover</h4>
+          <ul class="footer-links-list">
+            <li><a href="discover.html?filter=trending" class="footer-link">Trending</a></li>
+            <li><a href="videos.html" class="footer-link">Creator Videos</a></li>
+            <li><a href="stories.html" class="footer-link">Fashion Stories</a></li>
+            <li><a href="collections.html" class="footer-link">Collections</a></li>
+            <li><a href="discover.html?category=streetwear" class="footer-link">Street Style</a></li>
+            <li><a href="discover.html?category=vintage" class="footer-link">Vintage Archives</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Explore Links -->
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="explore-map.html" class="footer-link">Interactive Map</a></li>
+            <li><a href="creators.html" class="footer-link">Creator Directory</a></li>
+            <li><a href="explore-map.html?loc=tokyo" class="footer-link">Tokyo Hub</a></li>
+            <li><a href="explore-map.html?loc=paris" class="footer-link">Paris Hub</a></li>
+            <li><a href="explore-map.html?loc=seoul" class="footer-link">Seoul Hub</a></li>
+            <li><a href="explore-map.html?loc=milan" class="footer-link">Milan Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Platform & Legal -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">About MODE / ATLAS</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Submissions</a></li>
+            <li><a href="login.html" class="footer-link">Sign In</a></li>
+            <li><a href="signup.html" class="footer-link">Join As Explorer</a></li>
+            <li><a href="coming-soon.html" class="footer-link">Next Seasonal Drop</a></li>
+            <li><a href="404.html" class="footer-link">Page Status</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 MODE / ATLAS. All rights reserved. Not for commercial resale.
+        </div>
+        <div class="footer-social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X / Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search & Saved Drawer & Modals -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true">
+    <div class="search-modal-container">
+      <div class="search-modal-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" id="globalSearchInput" class="search-input-field" placeholder="Search apparel, creators, places, trends..." autocomplete="off">
+        <button class="btn-icon" id="searchModalClose" style="width: 32px; height: 32px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="search-modal-body">
+        <div id="searchDefaultSections">
+          <div style="margin-bottom: 1.5rem;">
+            <div class="search-section-title">Trending Searches</div>
+            <div class="search-pills-row">
+              <button class="search-tag-pill" data-trending-tag="Tokyo Street Style">Tokyo Street Style</button>
+              <button class="search-tag-pill" data-trending-tag="Quiet Tailoring">Quiet Tailoring</button>
+              <button class="search-tag-pill" data-trending-tag="Seoul Fashion">Seoul Fashion</button>
+              <button class="search-tag-pill" data-trending-tag="Vintage Archival">Vintage Archival</button>
+            </div>
+          </div>
+          <div>
+            <div class="search-section-title">Recent Inquiries</div>
+            <div class="search-pills-row" id="recentSearchesList"></div>
+          </div>
+        </div>
+        <div id="searchResultsContainer" style="display: none;"></div>
+      </div>
+      <div class="search-modal-footer"><span>Press ESC to exit</span><span>MODE / ATLAS Index</span></div>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="savedBackdrop"></div>
+  <aside class="saved-drawer" id="savedDrawer">
+    <div class="saved-drawer-header">
+      <div><span class="kicker">MY SELECTIONS</span><h3 style="font-size: 1.25rem; margin-top: 0.2rem;">Saved Discoveries <span id="savedDrawerCount">(0)</span></h3></div>
+      <button class="btn-icon" data-action="close-saved"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="saved-drawer-tabs">
+      <button class="saved-tab-btn active" data-tab="all">All</button>
+      <button class="saved-tab-btn" data-tab="video">Videos</button>
+      <button class="saved-tab-btn" data-tab="story">Stories</button>
+      <button class="saved-tab-btn" data-tab="creator">Creators</button>
+      <button class="saved-tab-btn" data-tab="location">Locations</button>
+    </div>
+    <div class="saved-drawer-content" id="savedDrawerContent"></div>
+    <div class="saved-drawer-footer">
+      <button class="btn btn-secondary" id="savedClearAllBtn" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;">Clear All</button>
+      <a href="discover.html" class="btn btn-primary" style="font-size: 0.8125rem;">Discover More</a>
+    </div>
+  </aside>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoPlayerModal" role="dialog" aria-modal="true">
+    <div class="video-modal-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle); background-color: var(--bg-primary);">
+        <span class="badge badge-location" id="videoModalLocation">Tokyo · Street Style</span>
+        <button class="btn-icon" id="videoModalClose" style="width: 32px; height: 32px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="video-player-container">
+        <video id="modalHtmlVideo" class="video-player-media" loop playsinline></video>
+        <button class="video-overlay-play-center video-play-state-icon" data-action="toggle-video-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+        <div class="video-custom-controls">
+          <div class="video-timeline-bar" data-action="toggle-video-play"><div class="video-timeline-progress"></div></div>
+          <div class="video-controls-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <button data-action="toggle-video-play" class="video-play-state-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+              <button data-action="toggle-video-mute" class="video-mute-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
+              <span class="font-mono" style="font-size: 0.75rem;">01:14 / 02:48</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-modal-info">
+        <div>
+          <h3 id="videoModalTitle" style="font-size: 1.25rem; font-weight: 600;">Inside a Tokyo Vintage Archive</h3>
+          <span style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem; display: block;">Curated by <strong id="videoModalCreator">Mika Tanaka</strong></span>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button id="videoModalBookmarkBtn" class="btn btn-secondary" data-action="bookmark" style="font-size: 0.8125rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            <span class="bookmark-label">Save Discovery</span>
+          </button>
+          <a id="videoModalDetailsLink" href="video-details.html?id=video-1" class="btn btn-primary" style="font-size: 0.8125rem;">Full Details →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/bookmarks.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/discovery.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

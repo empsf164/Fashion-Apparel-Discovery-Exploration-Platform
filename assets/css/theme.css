@@ -1,0 +1,136 @@
+/* ==========================================================================
+   MODE / ATLAS — High Fashion Discovery & Exploration Platform
+   Theme & Design Tokens System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Typography */
+  --font-primary: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-editorial: 'DM Serif Display', Georgia, serif;
+  --font-mono: 'Space Grotesk', ui-monospace, monospace;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Global Transition Timing */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* Radius Tokens */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Container Widths */
+  --container-max: 1440px;
+  --container-narrow: 1040px;
+  --container-article: 840px;
+  --gutter-x: clamp(1.25rem, 3.5vw, 3.5rem);
+
+  /* Header Height */
+  --header-height: 78px;
+}
+
+/* ==========================================
+   DARK THEME (Default Signature Editorial)
+   ========================================== */
+[data-theme="dark"],
+:root:not([data-theme="light"]) {
+  color-scheme: dark;
+
+  /* Background Colors */
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #121216;
+  --bg-tertiary: #191920;
+  --bg-elevated: #21212a;
+  --bg-overlay: rgba(8, 8, 10, 0.88);
+  --bg-glass: rgba(14, 14, 18, 0.82);
+
+  /* Text Colors */
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1aa;
+  --text-muted: #656570;
+  --text-inverse: #0d0d10;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  --border-focus: #f5f5f7;
+
+  /* Editorial Accents */
+  --accent-rust: #c85a32;
+  --accent-rust-soft: rgba(200, 90, 50, 0.15);
+  --accent-olive: #78866b;
+  --accent-olive-soft: rgba(120, 134, 107, 0.15);
+  --accent-burgundy: #8b263e;
+  --accent-burgundy-soft: rgba(139, 38, 62, 0.18);
+  --accent-gold: #c5a880;
+
+  /* Surface Badges & Controls */
+  --badge-bg: rgba(255, 255, 255, 0.06);
+  --badge-border: rgba(255, 255, 255, 0.1);
+  --card-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6);
+  --card-shadow-hover: 0 24px 50px -12px rgba(0, 0, 0, 0.85);
+
+  /* Map Tile Inversion Filters */
+  --map-filter: brightness(0.65) invert(1) contrast(3) hue-rotate(200deg) saturate(0.35);
+  --map-tile-bg: #121216;
+}
+
+/* ==========================================
+   LIGHT THEME (Warm Bone & Editorial Off-White)
+   ========================================== */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Background Colors */
+  --bg-primary: #f9f8f5;
+  --bg-secondary: #f0ede6;
+  --bg-tertiary: #e6e2d8;
+  --bg-elevated: #ffffff;
+  --bg-overlay: rgba(249, 248, 245, 0.92);
+  --bg-glass: rgba(249, 248, 245, 0.88);
+
+  /* Text Colors */
+  --text-primary: #121214;
+  --text-secondary: #575761;
+  --text-muted: #888894;
+  --text-inverse: #f5f5f7;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(0, 0, 0, 0.07);
+  --border-medium: rgba(0, 0, 0, 0.15);
+  --border-strong: rgba(0, 0, 0, 0.32);
+  --border-focus: #121214;
+
+  /* Editorial Accents */
+  --accent-rust: #b34721;
+  --accent-rust-soft: rgba(179, 71, 33, 0.12);
+  --accent-olive: #5d6b52;
+  --accent-olive-soft: rgba(93, 107, 82, 0.12);
+  --accent-burgundy: #731b31;
+  --accent-burgundy-soft: rgba(115, 27, 49, 0.12);
+  --accent-gold: #9e7f53;
+
+  /* Surface Badges & Controls */
+  --badge-bg: rgba(0, 0, 0, 0.05);
+  --badge-border: rgba(0, 0, 0, 0.09);
+  --card-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 20px 40px -12px rgba(0, 0, 0, 0.14);
+
+  /* Map Tile Inversion Filters */
+  --map-filter: grayscale(0.7) contrast(1.1) brightness(0.96);
+  --map-tile-bg: #f0ede6;
+}

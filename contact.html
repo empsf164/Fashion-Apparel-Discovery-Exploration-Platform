@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Submissions — MODE / ATLAS</title>
+  <meta name="description" content="Reach our global editorial desks, office bureaus, creator support team, or partnership curators.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+
+  <!-- Mandatory Navbar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo"><span>MODE</span><span class="brand-slash">/</span><span>ATLAS</span></a>
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="stories.html" class="nav-link">Stories</a>
+        <a href="creators.html" class="nav-link">Creators</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" data-action="open-search" aria-label="Search">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <span>Search</span>
+          <kbd class="search-shortcut-kbd">⌘K</kbd>
+        </button>
+
+        <button class="theme-toggle-btn" data-action="toggle-theme" aria-label="Theme"><svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo"><span>MODE</span><span class="brand-slash">/</span><span>ATLAS</span></a>
+      <button class="btn-icon" id="mobileNavClose"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <nav class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="discover.html" class="mobile-nav-link">Discover</a>
+      <a href="videos.html" class="mobile-nav-link">Videos</a>
+      <a href="stories.html" class="mobile-nav-link">Stories</a>
+      <a href="creators.html" class="mobile-nav-link">Creators</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Contact Hero Section -->
+    <section class="section-spacing" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div style="max-width: 780px; margin: 0 auto; text-align: center;">
+          <span class="kicker">COMMUNICATION DESK & BUREAUS</span>
+          <h1 class="hero-title" style="margin: 0.5rem 0 1rem;">
+            Contact MODE / ATLAS
+          </h1>
+          <p class="lead-text" style="max-width: 620px; margin: 0 auto;">
+            Connect with our global editorial outposts, submit archival dispatches, apply to join our creator network, or visit our physical bureau locations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact Section (Form + Office Info & Social Icons Grid) -->
+    <section class="section-spacing" style="padding-top: 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem; align-items: start;" class="contact-split-grid">
+          
+          <!-- Form Card -->
+          <div class="fashion-card" style="padding: clamp(2rem, 4vw, 3rem); border-radius: var(--radius-xl); background-color: var(--bg-secondary);">
+            <h2 style="font-family: var(--font-editorial); font-size: 1.75rem; margin-bottom: 0.4rem; font-weight: 400;">
+              Send a Dispatch
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 2rem;">
+              Fill out the form below and our regional bureau desk will respond within 24 hours.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-row-2col" style="margin-bottom: 1.25rem;">
+                <div>
+                  <label for="contactName" class="form-label">Your Name</label>
+                  <input type="text" id="contactName" required class="form-input" placeholder="e.g. Elena Vance">
+                </div>
+                <div>
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" id="contactEmail" required class="form-input" placeholder="name@domain.com">
+                </div>
+              </div>
+
+              <div class="form-row-2col" style="margin-bottom: 1.25rem;">
+                <div>
+                  <label for="contactPhone" class="form-label">Phone Number (Optional)</label>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="+33 1 42 68 55 00">
+                </div>
+                <div>
+                  <label for="contactTopic" class="form-label">Inquiry Topic</label>
+                  <select id="contactTopic" required class="form-select">
+                    <option value="general">General Inquiries</option>
+                    <option value="creator">Creator Support & Onboarding</option>
+                    <option value="editorial">Editorial Story Pitch</option>
+                    <option value="archive">Archival Licensing</option>
+                    <option value="partnership">Curated Partnership</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message / Proposal</label>
+                <textarea id="contactMessage" rows="5" required class="form-textarea" placeholder="Tell us about your archive, video dispatch, story pitch, or question..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.95rem; font-size: 0.95rem;">
+                Send Message to Bureau →
+              </button>
+            </form>
+          </div>
+
+          <!-- Bureau Address & Phone Numbers & Social Media -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Global Office Locations & Phones -->
+            <div class="fashion-card" style="padding: 2rem; border-radius: var(--radius-xl); background-color: var(--bg-secondary);">
+              <span class="kicker" style="margin-bottom: 0.75rem;">HEADQUARTERS & BUREAUS</span>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.5rem; margin-bottom: 1.25rem; font-weight: 400;">
+                Global Office Addresses
+              </h3>
+
+              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <!-- Paris Address -->
+                <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary);">Paris Bureau (Global HQ)</strong>
+                    <span class="badge badge-location">Paris, France</span>
+                  </div>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0.25rem 0 0.4rem;">
+                    📍 24 Rue de Turenne, 3rd Arrondissement, 75003 Paris, France
+                  </p>
+                  <p style="font-size: 0.8125rem; color: var(--accent-rust); margin: 0;">
+                    📞 Phone: <a href="tel:+33142685500" style="color: inherit; text-decoration: underline;">+33 1 42 68 55 00</a>
+                  </p>
+                </div>
+
+                <!-- Tokyo Address -->
+                <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary);">Tokyo Bureau</strong>
+                    <span class="badge badge-location">Tokyo, Japan</span>
+                  </div>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0.25rem 0 0.4rem;">
+                    📍 5-10-1 Minamiaoyama, Minato-ku, Tokyo 107-0062, Japan
+                  </p>
+                  <p style="font-size: 0.8125rem; color: var(--accent-rust); margin: 0;">
+                    📞 Phone: <a href="tel:+81354568900" style="color: inherit; text-decoration: underline;">+81 3 5456 8900</a>
+                  </p>
+                </div>
+
+                <!-- Milan Address -->
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary);">Milan Bureau</strong>
+                    <span class="badge badge-location">Milan, Italy</span>
+                  </div>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0.25rem 0 0.4rem;">
+                    📍 Via Porta Veneziana 14, 20121 Milan, Italy
+                  </p>
+                  <p style="font-size: 0.8125rem; color: var(--accent-rust); margin: 0;">
+                    📞 Phone: <a href="tel:+390287654321" style="color: inherit; text-decoration: underline;">+39 02 8765 4321</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Icons Section -->
+            <div class="fashion-card" style="padding: 1.75rem 2rem; border-radius: var(--radius-xl); background-color: var(--bg-secondary);">
+              <span class="kicker" style="margin-bottom: 0.5rem;">CONNECT & FOLLOW</span>
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-weight: 500;">Social Media Channels</h4>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                Follow daily video dispatches, atelier BTS clips, and archival fashion photography across our channels:
+              </p>
+
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="Instagram" style="padding: 0.55rem 1rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  <span>Instagram</span>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="YouTube" style="padding: 0.55rem 1rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                  <span>YouTube</span>
+                </a>
+
+                <!-- X / Twitter -->
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="X / Twitter" style="padding: 0.55rem 1rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                  <span>Twitter / X</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="LinkedIn" style="padding: 0.55rem 1rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <!-- Pinterest -->
+                <a href="https://pinterest.com" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="Pinterest" style="padding: 0.55rem 1rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 0-3.6 19.3c.1-.8.2-2.1.4-3l1.1-4.7s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.8 0 1.2.6 1.2 1.4 0 .9-.5 2.1-.8 3.3-.2 1.1.5 2 1.6 2 2 0 3.5-2.1 3.5-5.1 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2 1 2.6.1.1.1.2.1.3l-.3 1.4c0 .1-.1.2-.3.1-1.6-.7-2.6-3-2.6-4.9 0-3.9 2.9-7.6 8.3-7.6 4.4 0 7.8 3.1 7.8 7.3 0 4.3-2.7 7.8-6.5 7.8-1.3 0-2.5-.7-2.9-1.5l-.8 3.1c-.3 1.1-1.1 2.5-1.6 3.4A10 10 0 1 0 12 2z"/></svg>
+                  <span>Pinterest</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Google Map Section -->
+    <section class="section-spacing" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="kicker">REAL-TIME GOOGLE MAPS</span>
+            <h2 class="section-title">Global Bureau Google Map</h2>
+            <p class="section-subtitle">Interact with real Google Maps locations for our global fashion bureaus in Paris, Tokyo, and Milan.</p>
+          </div>
+          
+          <!-- City Switcher Pills -->
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="filter-pill active" data-map-src="https://maps.google.com/maps?q=24%20Rue%20de%20Turenne%2C%2075003%20Paris%2C%20France&t=&z=15&ie=UTF8&iwloc=&output=embed" data-action="switch-google-map">🇫🇷 Paris HQ</button>
+            <button class="filter-pill" data-map-src="https://maps.google.com/maps?q=5-10-1%20Minamiaoyama%2C%20Minato%20City%2C%20Tokyo%20107-0062%2C%20Japan&t=&z=15&ie=UTF8&iwloc=&output=embed" data-action="switch-google-map">🇯🇵 Tokyo Bureau</button>
+            <button class="filter-pill" data-map-src="https://maps.google.com/maps?q=Via%20Porta%20Venezia%2C%2020121%20Milano%20MI%2C%20Italy&t=&z=15&ie=UTF8&iwloc=&output=embed" data-action="switch-google-map">🇮🇹 Milan Bureau</button>
+          </div>
+        </div>
+
+        <div class="fashion-card" style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border-medium); box-shadow: 0 15px 40px rgba(0,0,0,0.3);">
+          <iframe 
+            id="googleMapIframe"
+            title="MODE / ATLAS Bureau Google Map"
+            src="https://maps.google.com/maps?q=24%20Rue%20de%20Turenne%2C%2075003%20Paris%2C%20France&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="460" 
+            style="border:0; display: block;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4-Column Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Philosophy -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <span>MODE</span>
+            <span class="brand-slash">/</span>
+            <span>ATLAS</span>
+          </a>
+          <p class="footer-tagline">
+            Discover What Fashion Is Becoming.
+          </p>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); max-width: 320px; margin-bottom: 1.5rem;">
+            A global exploration platform dedicated to creator video feeds, fashion journalism, interactive mapping, and curated apparel archives.
+          </p>
+
+          <!-- Newsletter Dispatches -->
+          <form data-form="newsletter" style="display: flex; gap: 0.5rem; max-width: 340px;">
+            <input type="email" placeholder="Your email for dispatches..." required class="form-input" style="padding: 0.6rem 0.9rem; font-size: 0.8125rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.1rem; font-size: 0.8125rem;">Join</button>
+          </form>
+        </div>
+
+        <!-- Col 2: Discover Links -->
+        <div>
+          <h4 class="footer-col-title">Discover</h4>
+          <ul class="footer-links-list">
+            <li><a href="discover.html?filter=trending" class="footer-link">Trending</a></li>
+            <li><a href="videos.html" class="footer-link">Creator Videos</a></li>
+            <li><a href="stories.html" class="footer-link">Fashion Stories</a></li>
+            <li><a href="collections.html" class="footer-link">Collections</a></li>
+            <li><a href="discover.html?category=streetwear" class="footer-link">Street Style</a></li>
+            <li><a href="discover.html?category=vintage" class="footer-link">Vintage Archives</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Explore Links -->
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="explore-map.html" class="footer-link">Interactive Map</a></li>
+            <li><a href="creators.html" class="footer-link">Creator Directory</a></li>
+            <li><a href="explore-map.html?loc=tokyo" class="footer-link">Tokyo Hub</a></li>
+            <li><a href="explore-map.html?loc=paris" class="footer-link">Paris Hub</a></li>
+            <li><a href="explore-map.html?loc=seoul" class="footer-link">Seoul Hub</a></li>
+            <li><a href="explore-map.html?loc=milan" class="footer-link">Milan Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Platform & Legal -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">About MODE / ATLAS</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Submissions</a></li>
+            <li><a href="login.html" class="footer-link">Sign In</a></li>
+            <li><a href="signup.html" class="footer-link">Join As Explorer</a></li>
+            <li><a href="coming-soon.html" class="footer-link">Next Seasonal Drop</a></li>
+            <li><a href="404.html" class="footer-link">Page Status</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 MODE / ATLAS. All rights reserved. Not for commercial resale.
+        </div>
+        <div class="footer-social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X / Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search & Saved Drawer -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true">
+    <div class="search-modal-container">
+      <div class="search-modal-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" id="globalSearchInput" class="search-input-field" placeholder="Search...">
+        <button class="btn-icon" id="searchModalClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="search-modal-body"><div id="searchResultsContainer" style="display: none;"></div></div>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="savedBackdrop"></div>
+  <aside class="saved-drawer" id="savedDrawer">
+    <div class="saved-drawer-header">
+      <div><span class="kicker">MY SELECTIONS</span><h3 style="font-size: 1.25rem;">Saved Discoveries <span id="savedDrawerCount">(0)</span></h3></div>
+      <button class="btn-icon" data-action="close-saved"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="saved-drawer-content" id="savedDrawerContent"></div>
+  </aside>
+
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/bookmarks.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Google Maps Interactive Switcher Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mapIframe = document.getElementById('googleMapIframe');
+      const switchButtons = document.querySelectorAll('[data-action="switch-google-map"]');
+
+      switchButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          switchButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const newSrc = btn.getAttribute('data-map-src');
+          if (newSrc && mapIframe) {
+            mapIframe.src = newSrc;
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

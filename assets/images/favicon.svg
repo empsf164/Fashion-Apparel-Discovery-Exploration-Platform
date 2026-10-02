@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="modeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C86D51"/>
+      <stop offset="50%" stop-color="#DF9B84"/>
+      <stop offset="100%" stop-color="#B8593D"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181816"/>
+      <stop offset="100%" stop-color="#0C0C0B"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#2D2D2A" stroke-width="1.5"/>
+  
+  <!-- Subtle Discovery Compass Radial Ring -->
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#C86D51" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="3 3"/>
+  
+  <!-- Fashion 'M' / Needle & Atlas Compass Vector -->
+  <path d="M 19 44 L 19 20 L 32 34 L 45 20 L 45 44" fill="none" stroke="url(#modeGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- North Star / Editorial Discovery Accent -->
+  <circle cx="32" cy="14" r="2.5" fill="#E8D5C4"/>
+  <path d="M 32 10 L 32 18 M 28 14 L 36 14" stroke="#E8D5C4" stroke-width="1" stroke-linecap="round"/>
+</svg>
