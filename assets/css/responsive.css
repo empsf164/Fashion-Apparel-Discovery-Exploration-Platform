@@ -37,7 +37,6 @@
 
 /* --------------------------------------------------------------------------
    Tablets Portrait & 1024px Viewports (641px - 1024px)
-   Align 2 cards in one row & last odd number card in center alignment
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) and (min-width: 641px) {
   .discovery-grid,
@@ -48,6 +47,24 @@
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.5rem !important;
+    align-items: stretch !important;
+  }
+
+  .discovery-grid .fashion-card,
+  .cards-grid .fashion-card,
+  .curated-grid .fashion-card,
+  .fashion-grid .fashion-card {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .discovery-grid .fashion-card .card-content,
+  .cards-grid .fashion-card .card-content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
   }
 
   /* Last odd numbered card centered across both columns */
@@ -63,12 +80,20 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
+  .story-cover-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .story-cover-grid .card-media-wrap {
+    min-height: 320px !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
-   Tablets General (max-width: 991px)
+   Tablets & Mobile (max-width: 1024px) — Hamburger Navigation Trigger
    -------------------------------------------------------------------------- */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   :root {
     --header-height: 70px;
   }
@@ -318,6 +343,27 @@
     max-width: 100%;
   }
 
+  /* Video Hero Card Responsive Alignment */
+  .video-hero-card,
+  .fashion-card:has(.badge-duration) {
+    overflow: hidden !important;
+  }
+
+  .video-hero-card .card-media-wrap,
+  .fashion-card:has(.badge-duration) .card-media-wrap {
+    min-height: 480px !important;
+    height: auto !important;
+  }
+
+  .video-hero-overlay-content {
+    position: absolute !important;
+    bottom: 1.5rem !important;
+    left: 1.25rem !important;
+    right: 1.25rem !important;
+    max-width: calc(100% - 2.5rem) !important;
+    z-index: 5 !important;
+  }
+
   .article-body {
     font-size: 1rem;
   }
@@ -356,6 +402,37 @@
     justify-self: stretch !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  /* Equal Button Sizes on Mobile Viewports */
+  .hero-actions,
+  .hero-btn-group,
+  .cta-btn-group,
+  .final-cta-btn-group,
+  .about-goal-actions,
+  .final-cta-section div:has(> .btn) {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+    align-items: stretch !important;
+    justify-content: stretch !important;
+  }
+
+  .hero-actions .btn,
+  .hero-btn-group .btn,
+  .cta-btn-group .btn,
+  .final-cta-btn-group .btn,
+  .about-goal-actions .btn,
+  .final-cta-section .btn {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.9rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
   }
 }
 

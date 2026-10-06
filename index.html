@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MODE / ATLAS — Discover What Fashion Is Becoming</title>
-  <meta name="description" content="A premium fashion discovery publication, creator video platform, and visual exploration engine connecting global apparel, creators, stories, and destinations.">
+  <meta name="description"
+    content="A premium fashion discovery publication, creator video platform, and visual exploration engine connecting global apparel, creators, stories, and destinations.">
   <meta property="og:title" content="MODE / ATLAS — Discover What Fashion Is Becoming">
-  <meta property="og:description" content="Explore creator video feeds, fashion editorial stories, interactive maps, and curated apparel collections worldwide.">
+  <meta property="og:description"
+    content="Explore creator video feeds, fashion editorial stories, interactive maps, and curated apparel collections worldwide.">
   <meta property="og:type" content="website">
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
@@ -16,8 +19,10 @@
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
+
 <body>
 
   <!-- ==========================================
@@ -35,11 +40,11 @@
       <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="Main Navigation">
         <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="discover.html" class="nav-link">Discover</a>
         <a href="videos.html" class="nav-link">Videos</a>
         <a href="stories.html" class="nav-link">Stories</a>
         <a href="creators.html" class="nav-link">Creators</a>
-        <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
@@ -47,9 +52,10 @@
       <div class="header-actions">
         <!-- Global Search Button (Cmd+K) -->
         <button class="search-trigger-btn" data-action="open-search" aria-label="Search Platform">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"/>
-            <path d="M21 21l-4.35-4.35"/>
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
           </svg>
           <span>Search</span>
           <kbd class="search-shortcut-kbd">⌘K</kbd>
@@ -59,19 +65,21 @@
 
         <!-- Light / Dark Theme Toggle -->
         <button class="theme-toggle-btn" data-action="toggle-theme" aria-label="Toggle Light and Dark Theme">
-          <svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          <svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
           </svg>
-          <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
         </button>
 
@@ -79,7 +87,8 @@
         <a href="signup.html" class="btn btn-primary">Sign Up</a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Mobile Navigation"
+          aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
@@ -100,19 +109,19 @@
         </a>
         <button class="btn-icon" id="mobileNavClose" aria-label="Close menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="18" y1="6" x2="6" y2="18"/>
-            <line x1="6" y1="6" x2="18" y2="18"/>
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
       </div>
 
       <nav class="mobile-drawer-nav">
         <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
         <a href="discover.html" class="mobile-nav-link">Discover</a>
         <a href="videos.html" class="mobile-nav-link">Videos</a>
         <a href="stories.html" class="mobile-nav-link">Stories</a>
         <a href="creators.html" class="mobile-nav-link">Creators</a>
-        <a href="about.html" class="mobile-nav-link">About</a>
         <a href="contact.html" class="mobile-nav-link">Contact</a>
       </nav>
     </div>
@@ -126,7 +135,8 @@
        2. HERO SECTION
        ========================================== -->
   <main>
-    <section class="hero-section section-spacing" style="padding-top: clamp(2rem, 5vw, 4rem); padding-bottom: clamp(3rem, 6vw, 5.5rem);">
+    <section class="hero-section section-spacing"
+      style="padding-top: clamp(2rem, 5vw, 4rem); padding-bottom: clamp(3rem, 6vw, 5.5rem);">
       <div class="container">
         <div class="hero-grid">
           <!-- Hero Left Column: Editorial Headline & Actions -->
@@ -134,7 +144,8 @@
             <div class="hero-meta-tags">
               <span class="kicker">NEW DISCOVERY</span>
               <span class="badge badge-location">TOKYO · STREET STYLE</span>
-              <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">35.6595° N, 139.7004° E</span>
+              <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">35.6595° N, 139.7004°
+                E</span>
             </div>
 
             <h1 class="hero-title">
@@ -142,51 +153,67 @@
             </h1>
 
             <p class="lead-text" style="margin: 1.5rem 0 2.25rem; max-width: 580px;">
-              Explore the people, places, apparel and ideas shaping fashion around the world. From Harajuku archival vaults to Seoul midnight textile guilds.
+              Explore the people, places, apparel and ideas shaping fashion around the world. From Harajuku archival
+              vaults to Seoul midnight textile guilds.
             </p>
 
-            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <div class="hero-actions hero-btn-group"
+              style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
               <a href="discover.html" class="btn btn-primary" style="padding: 1rem 2.25rem; font-size: 0.95rem;">
                 Start Exploring
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
-              <button class="btn btn-secondary" data-action="play-video" data-video-id="video-1" style="padding: 1rem 1.85rem; font-size: 0.95rem;">
+              <button class="btn btn-secondary" data-action="play-video" data-video-id="video-1"
+                style="padding: 1rem 2.25rem; font-size: 0.95rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
+                  <polygon points="5 3 19 12 5 21 5 3" />
                 </svg>
                 Watch Discoveries
               </button>
             </div>
 
             <!-- Stats Bar -->
-            <div style="display: flex; gap: 2.5rem; margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); flex-wrap: wrap;">
+            <div
+              style="display: flex; gap: 2.5rem; margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); flex-wrap: wrap;">
               <div>
-                <span style="font-family: var(--font-mono); font-size: 1.75rem; font-weight: 700; color: var(--text-primary);">1,480+</span>
-                <span style="display: block; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Apparel Pieces</span>
+                <span
+                  style="font-family: var(--font-mono); font-size: 1.75rem; font-weight: 700; color: var(--text-primary);">1,480+</span>
+                <span
+                  style="display: block; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Apparel
+                  Pieces</span>
               </div>
               <div>
-                <span style="font-family: var(--font-mono); font-size: 1.75rem; font-weight: 700; color: var(--accent-rust);">128</span>
-                <span style="display: block; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Global Creators</span>
+                <span
+                  style="font-family: var(--font-mono); font-size: 1.75rem; font-weight: 700; color: var(--accent-rust);">128</span>
+                <span
+                  style="display: block; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Global
+                  Creators</span>
               </div>
               <div>
-                <span style="font-family: var(--font-mono); font-size: 1.75rem; font-weight: 700; color: var(--text-primary);">42</span>
-                <span style="display: block; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Fashion Capitals</span>
+                <span
+                  style="font-family: var(--font-mono); font-size: 1.75rem; font-weight: 700; color: var(--text-primary);">42</span>
+                <span
+                  style="display: block; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Fashion
+                  Capitals</span>
               </div>
             </div>
           </div>
 
           <!-- Hero Right Column: Layered Editorial Composition -->
           <div class="hero-media-composition" style="position: relative;">
-            <div class="fashion-card" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--card-shadow-hover);">
+            <div class="fashion-card"
+              style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--card-shadow-hover);">
               <div class="card-media-wrap" style="aspect-ratio: 4/5; position: relative;">
-                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=85" alt="Tokyo Street Style Editorial Look" loading="eager">
-                
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=85"
+                  alt="Tokyo Street Style Editorial Look" loading="eager">
+
                 <!-- Play Trigger Overlay -->
-                <button class="video-play-badge" data-action="play-video" data-video-id="video-1" aria-label="Play Tokyo Archive Video">
+                <button class="video-play-badge" data-action="play-video" data-video-id="video-1"
+                  aria-label="Play Tokyo Archive Video">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <polygon points="5 3 19 12 5 21 5 3"/>
+                    <polygon points="5 3 19 12 5 21 5 3" />
                   </svg>
                 </button>
 
@@ -194,7 +221,8 @@
 
                 <!-- Floating Editorial Kicker Tag -->
                 <div style="position: absolute; top: 1.25rem; left: 1.25rem; z-index: 4;">
-                  <span class="badge" style="background: rgba(10, 10, 12, 0.85); backdrop-filter: blur(8px); color: #fff; border: 1px solid rgba(255,255,255,0.15);">
+                  <span class="badge"
+                    style="background: rgba(10, 10, 12, 0.85); backdrop-filter: blur(8px); color: #fff; border: 1px solid rgba(255,255,255,0.15);">
                     Featured Spotlight
                   </span>
                 </div>
@@ -204,12 +232,19 @@
                 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                   <div>
                     <span class="kicker">DISPATCH 084</span>
-                    <h3 style="font-size: 1.2rem; font-weight: 600; margin-top: 0.25rem;">Inside a Tokyo Vintage Archive</h3>
-                    <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.35rem;">Mika Tanaka on deconstructed 90s denim & Undercover vault pieces.</p>
+                    <h3 style="font-size: 1.2rem; font-weight: 600; margin-top: 0.25rem;">Inside a Tokyo Vintage Archive
+                    </h3>
+                    <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.35rem;">Mika Tanaka on
+                      deconstructed 90s denim & Undercover vault pieces.</p>
                   </div>
-                  <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="video-1" data-bookmark-title="Inside a Tokyo Vintage Archive" data-bookmark-category="Street Style" data-bookmark-location="Tokyo, Japan" data-bookmark-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" data-bookmark-type="video" data-bookmark-url="video-details.html?id=video-1" aria-label="Save Video">
+                  <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="video-1"
+                    data-bookmark-title="Inside a Tokyo Vintage Archive" data-bookmark-category="Street Style"
+                    data-bookmark-location="Tokyo, Japan"
+                    data-bookmark-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80"
+                    data-bookmark-type="video" data-bookmark-url="video-details.html?id=video-1"
+                    aria-label="Save Video">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
                     </svg>
                   </button>
                 </div>
@@ -223,13 +258,15 @@
     <!-- ==========================================
          3. TRENDING DISCOVERIES
          ========================================== -->
-    <section class="trending-section section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <section class="trending-section section-spacing"
+      style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
       <div class="container">
         <div class="section-header">
           <div class="section-header-content">
             <span class="kicker">CURATED MOVEMENT</span>
             <h2 class="section-title">Trending Discoveries</h2>
-            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">The apparel aesthetics, independent designers, and cities capturing attention right now.</p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">The apparel aesthetics,
+              independent designers, and cities capturing attention right now.</p>
           </div>
           <a href="discover.html?filter=trending" class="btn btn-secondary">View All Discoveries →</a>
         </div>
@@ -238,15 +275,22 @@
           <!-- Card 1: Street Style -->
           <article class="fashion-card">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" alt="Sculptural Tailoring" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
+                alt="Sculptural Tailoring" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Milan, Italy</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-1" data-bookmark-title="The Return of Quiet Tailoring" data-bookmark-category="Street Style" data-bookmark-location="Milan, Italy" data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-1" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-1"
+                data-bookmark-title="The Return of Quiet Tailoring" data-bookmark-category="Street Style"
+                data-bookmark-location="Milan, Italy"
+                data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-1" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">Street Style</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.25rem;"><a href="story-details.html?id=story-1">Sculptural Wool & Quiet Tailoring</a></h3>
+              <h3 class="card-title"><a href="story-details.html?id=story-1">Sculptural Wool Tailoring</a></h3>
               <p style="font-size: 0.8125rem; color: var(--text-secondary);">Milan · Via Montenapoleone</p>
             </div>
           </article>
@@ -254,15 +298,22 @@
           <!-- Card 2: New Designers -->
           <article class="fashion-card">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="Paris Haute Drape" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"
+                alt="Paris Haute Drape" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Paris, France</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-2" data-bookmark-title="Zero-Waste Architectural Drape" data-bookmark-category="New Designers" data-bookmark-location="Paris, France" data-bookmark-image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" data-bookmark-type="story" data-bookmark-url="discover.html" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-2"
+                data-bookmark-title="Zero-Waste Architectural Drape" data-bookmark-category="New Designers"
+                data-bookmark-location="Paris, France"
+                data-bookmark-image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="story" data-bookmark-url="discover.html" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">New Designers</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.25rem;"><a href="discover.html?category=designers">Zero-Waste Architectural Drape</a></h3>
+              <h3 class="card-title"><a href="discover.html?category=designers">Architectural Silk Drape</a></h3>
               <p style="font-size: 0.8125rem; color: var(--text-secondary);">Paris · Le Marais Atelier</p>
             </div>
           </article>
@@ -270,15 +321,22 @@
           <!-- Card 3: Vintage Finds -->
           <article class="fashion-card">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Vintage Military & Trench" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80"
+                alt="Vintage Military & Trench" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">London, UK</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-3" data-bookmark-title="Reconstructed British Gabardine" data-bookmark-category="Vintage Finds" data-bookmark-location="London, UK" data-bookmark-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" data-bookmark-type="story" data-bookmark-url="discover.html" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-3"
+                data-bookmark-title="Reconstructed British Gabardine" data-bookmark-category="Vintage Finds"
+                data-bookmark-location="London, UK"
+                data-bookmark-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="story" data-bookmark-url="discover.html" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">Vintage Finds</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.25rem;"><a href="discover.html?category=vintage">Reconstructed British Gabardine</a></h3>
+              <h3 class="card-title"><a href="discover.html?category=vintage">British Gabardine Trench</a></h3>
               <p style="font-size: 0.8125rem; color: var(--text-secondary);">London · Shoreditch Archive</p>
             </div>
           </article>
@@ -286,15 +344,22 @@
           <!-- Card 4: Emerging Labels -->
           <article class="fashion-card">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="Seoul Deconstructed Knit" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80"
+                alt="Seoul Deconstructed Knit" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Seoul, Korea</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-4" data-bookmark-title="Seongsu Raw-Edge Knits" data-bookmark-category="Emerging Labels" data-bookmark-location="Seoul, Korea" data-bookmark-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" data-bookmark-type="story" data-bookmark-url="discover.html" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="trend-4"
+                data-bookmark-title="Seongsu Raw-Edge Knits" data-bookmark-category="Emerging Labels"
+                data-bookmark-location="Seoul, Korea"
+                data-bookmark-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="story" data-bookmark-url="discover.html" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">Emerging Labels</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.25rem;"><a href="discover.html?loc=seoul">Seongsu Raw-Edge Knits</a></h3>
+              <h3 class="card-title"><a href="discover.html?loc=seoul">Raw-Edge Knitwear</a></h3>
               <p style="font-size: 0.8125rem; color: var(--text-secondary);">Seoul · Seongsu-dong</p>
             </div>
           </article>
@@ -303,108 +368,24 @@
     </section>
 
     <!-- ==========================================
-         4. CREATOR VIDEO FEED PREVIEW
-         ========================================== -->
-    <section class="video-feed-section section-spacing">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-header-content">
-            <span class="kicker">CREATOR VOICES</span>
-            <h2 class="section-title">From People Who Live Fashion</h2>
-            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Watch short-form studio dispatches, archive explorations, and runway insights from independent fashion filmmakers.</p>
-          </div>
-          <a href="videos.html" class="btn btn-secondary">Watch All Videos →</a>
-        </div>
-
-        <div class="discovery-grid">
-          <!-- Video Card 1 -->
-          <div class="fashion-card video-card">
-            <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Inside a Tokyo Vintage Archive" loading="lazy">
-              <button class="video-play-badge" data-action="play-video" data-video-id="video-1" aria-label="Play Video">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </button>
-              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Tokyo, Japan</span>
-              <span class="badge-duration">02:48</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="video-1" data-bookmark-title="Inside a Tokyo Vintage Archive" data-bookmark-category="Street Style" data-bookmark-location="Tokyo, Japan" data-bookmark-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" data-bookmark-type="video" data-bookmark-url="video-details.html?id=video-1" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-              </button>
-            </div>
-            <div class="card-content">
-              <span class="kicker" style="font-size: 0.6875rem;">Street Style</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="video-details.html?id=video-1">Inside a Tokyo Vintage Archive</a></h3>
-              <div class="creator-chip">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Mika Tanaka" class="creator-avatar-sm">
-                <span class="creator-name-sm"><a href="creator-profile.html?id=mika-tanaka">Mika Tanaka</a> · Tokyo, Japan</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Card 2 -->
-          <div class="fashion-card video-card">
-            <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="24 Hours Inside Seoul Fashion District" loading="lazy">
-              <button class="video-play-badge" data-action="play-video" data-video-id="video-2" aria-label="Play Video">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </button>
-              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Seoul, Korea</span>
-              <span class="badge-duration">04:12</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="video-2" data-bookmark-title="24 Hours Inside Seoul Fashion District" data-bookmark-category="Culture" data-bookmark-location="Seoul, Korea" data-bookmark-image="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" data-bookmark-type="video" data-bookmark-url="video-details.html?id=video-2" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-              </button>
-            </div>
-            <div class="card-content">
-              <span class="kicker" style="font-size: 0.6875rem;">Culture</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="video-details.html?id=video-2">24 Hours Inside Seoul Fashion District</a></h3>
-              <div class="creator-chip">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Jun-ho Park" class="creator-avatar-sm">
-                <span class="creator-name-sm"><a href="creator-profile.html?id=jun-ho-park">Jun-ho Park</a> · Seoul, South Korea</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Card 3 -->
-          <div class="fashion-card video-card">
-            <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="Paris Atelier: Sculptural Tailoring" loading="lazy">
-              <button class="video-play-badge" data-action="play-video" data-video-id="video-3" aria-label="Play Video">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </button>
-              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Paris, France</span>
-              <span class="badge-duration">03:35</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="video-3" data-bookmark-title="Paris Atelier: Sculptural Tailoring" data-bookmark-category="Designer Stories" data-bookmark-location="Paris, France" data-bookmark-image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" data-bookmark-type="video" data-bookmark-url="video-details.html?id=video-3" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-              </button>
-            </div>
-            <div class="card-content">
-              <span class="kicker" style="font-size: 0.6875rem;">Designer Stories</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="video-details.html?id=video-3">Paris Atelier: Sculptural Tailoring</a></h3>
-              <div class="creator-chip">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Camille Laurent" class="creator-avatar-sm">
-                <span class="creator-name-sm"><a href="creator-profile.html?id=camille-laurent">Camille Laurent</a> · Paris, France</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
          5. CATEGORY EXPLORER (Live Interactive Filter)
          ========================================== -->
-    <section class="category-explorer-section section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <section class="category-explorer-section section-spacing"
+      style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
       <div class="container">
-        <div class="section-header">
-          <div class="section-header-content">
-            <span class="kicker">APPAREL CLASSIFICATIONS</span>
+        <div class="section-header" style="text-align: center; justify-content: center; margin-bottom: 1.75rem;">
+          <div class="section-header-content" style="max-width: 680px; margin: 0 auto; text-align: center;">
+            <span class="kicker" style="display: inline-block;">APPAREL CLASSIFICATIONS</span>
             <h2 class="section-title">Category Explorer</h2>
-            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Filter global fashion discoveries instantly across apparel aesthetics without reloading.</p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem; max-width: 580px; margin-left: auto; margin-right: auto;">Filter global fashion
+              discoveries instantly across apparel aesthetics without reloading.</p>
           </div>
         </div>
 
         <!-- Horizontal Interactive Category Buttons -->
-        <div class="filter-pills-scroll" style="margin-bottom: 2rem;">
-          <button class="filter-pill active" data-filter-group="category" data-filter-value="all">All Categories</button>
+        <div class="filter-pills-scroll category-explorer-tags" style="margin-bottom: 2.5rem; justify-content: center; display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem;">
+          <button class="filter-pill active" data-filter-group="category" data-filter-value="all">All
+            Categories</button>
           <button class="filter-pill" data-filter-group="category" data-filter-value="women">Women</button>
           <button class="filter-pill" data-filter-group="category" data-filter-value="men">Men</button>
           <button class="filter-pill" data-filter-group="category" data-filter-value="unisex">Unisex</button>
@@ -413,67 +394,218 @@
           <button class="filter-pill" data-filter-group="category" data-filter-value="streetwear">Streetwear</button>
           <button class="filter-pill" data-filter-group="category" data-filter-value="vintage">Vintage</button>
           <button class="filter-pill" data-filter-group="category" data-filter-value="luxury">Luxury</button>
-          <button class="filter-pill" data-filter-group="category" data-filter-value="designers">Emerging Designers</button>
+          <button class="filter-pill" data-filter-group="category" data-filter-value="designers">Emerging
+            Designers</button>
         </div>
 
         <!-- Filterable Grid -->
         <div class="discovery-grid" id="discoveryGrid">
           <!-- Item 1: Unisex / Streetwear -->
-          <article class="fashion-card" data-discovery-card data-category="unisex streetwear apparel" data-style="streetwear" data-location="tokyo" data-type="apparel">
+          <article class="fashion-card" data-discovery-card data-category="unisex streetwear apparel"
+            data-style="streetwear" data-location="tokyo" data-type="apparel">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Harajuku Archival Parka" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80"
+                alt="Harajuku Archival Parka" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Tokyo, Japan</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-1" data-bookmark-title="Harajuku Reconstructed Technical Parka" data-bookmark-category="Streetwear" data-bookmark-location="Tokyo, Japan" data-bookmark-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" data-bookmark-type="apparel" data-bookmark-url="discover.html?category=streetwear" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-1"
+                data-bookmark-title="Harajuku Reconstructed Technical Parka" data-bookmark-category="Streetwear"
+                data-bookmark-location="Tokyo, Japan"
+                data-bookmark-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=streetwear"
+                aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">Streetwear · Unisex</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="discover.html?category=streetwear">Reconstructed Technical Parka</a></h3>
-              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Tokyo Subculture · Modular Hardware</p>
+              <h3 class="card-title"><a href="discover.html?category=streetwear">Technical Parka</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Tokyo · Modular Hardware</p>
             </div>
           </article>
 
           <!-- Item 2: Women / Luxury / Tailoring -->
-          <article class="fashion-card" data-discovery-card data-category="women luxury apparel" data-style="minimal" data-location="milan" data-type="apparel">
+          <article class="fashion-card" data-discovery-card data-category="women luxury apparel" data-style="minimal"
+            data-location="milan" data-type="apparel">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" alt="Sculptural Wool Double-Breasted Blazer" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
+                alt="Sculptural Wool Double-Breasted Blazer" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Milan, Italy</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-2" data-bookmark-title="Sculptural Wool Double-Breasted Blazer" data-bookmark-category="Luxury" data-bookmark-location="Milan, Italy" data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" data-bookmark-type="apparel" data-bookmark-url="discover.html?category=luxury" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-2"
+                data-bookmark-title="Sculptural Wool Double-Breasted Blazer" data-bookmark-category="Luxury"
+                data-bookmark-location="Milan, Italy"
+                data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=luxury" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">Luxury · Women</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="discover.html?category=luxury">Sculptural Wool Blazer</a></h3>
-              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Milan Tailoring · 100% Virgin Wool</p>
+              <h3 class="card-title"><a href="discover.html?category=luxury">Sculptural Wool Blazer</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Milan · Virgin Wool</p>
             </div>
           </article>
 
           <!-- Item 3: Accessories / Vintage -->
-          <article class="fashion-card" data-discovery-card data-category="accessories vintage" data-style="vintage" data-location="london" data-type="apparel">
+          <article class="fashion-card" data-discovery-card data-category="accessories vintage" data-style="vintage"
+            data-location="london" data-type="apparel">
             <div class="card-media-wrap" style="aspect-ratio: 4/5;">
-              <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Archival Saddle Leather Shoulder Bag" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                alt="Archival Saddle Leather Shoulder Bag" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">London, UK</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-3" data-bookmark-title="Archival Saddle Leather Shoulder Bag" data-bookmark-category="Accessories" data-bookmark-location="London, UK" data-bookmark-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" data-bookmark-type="apparel" data-bookmark-url="discover.html?category=accessories" aria-label="Bookmark">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-3"
+                data-bookmark-title="Archival Saddle Leather Shoulder Bag" data-bookmark-category="Accessories"
+                data-bookmark-location="London, UK"
+                data-bookmark-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=accessories"
+                aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
               <span class="kicker" style="font-size: 0.6875rem;">Accessories · Vintage</span>
-              <h3 class="card-title" style="margin: 0.35rem 0 0.2rem;"><a href="discover.html?category=accessories">Saddle Leather Shoulder Bag</a></h3>
-              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Hand-burnished Patina · Circa 1994</p>
+              <h3 class="card-title"><a href="discover.html?category=accessories">Saddle Leather Bag</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">London · Patina 1994</p>
+            </div>
+          </article>
+
+          <!-- Item 4: Footwear / Unisex / Luxury -->
+          <article class="fashion-card" data-discovery-card data-category="footwear unisex luxury apparel men"
+            data-style="minimal" data-location="tokyo" data-type="apparel">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+                alt="Sculptural Vibram Sole Derby Shoe" loading="lazy">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Tokyo, Japan</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-4"
+                data-bookmark-title="Sculptural Vibram Sole Derby" data-bookmark-category="Footwear"
+                data-bookmark-location="Tokyo, Japan"
+                data-bookmark-image="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=footwear" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Footwear · Luxury</span>
+              <h3 class="card-title"><a href="discover.html?category=footwear">Vibram Sole Derby</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Tokyo · Hand-welted Leather</p>
+            </div>
+          </article>
+
+          <!-- Item 5: Footwear / Vintage / Women -->
+          <article class="fashion-card" data-discovery-card data-category="footwear women vintage apparel"
+            data-style="vintage" data-location="paris" data-type="apparel">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"
+                alt="Archival Chelsea Heeled Boot" loading="lazy">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Paris, France</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-5"
+                data-bookmark-title="Archival Square-Toe Boot" data-bookmark-category="Footwear"
+                data-bookmark-location="Paris, France"
+                data-bookmark-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=footwear" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Footwear · Vintage</span>
+              <h3 class="card-title"><a href="discover.html?category=footwear">Square-Toe Boot</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Paris · Calfskin Archive</p>
+            </div>
+          </article>
+
+          <!-- Item 6: Emerging Designers / Women / Luxury -->
+          <article class="fashion-card" data-discovery-card data-category="designers women luxury apparel"
+            data-style="avant-garde" data-location="paris" data-type="apparel">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"
+                alt="Zero-Waste Pleated Silk Tunic" loading="lazy">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Paris, France</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-6"
+                data-bookmark-title="Zero-Waste Pleated Silk Tunic" data-bookmark-category="Emerging Designers"
+                data-bookmark-location="Paris, France"
+                data-bookmark-image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=designers" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Designers · Paris</span>
+              <h3 class="card-title"><a href="discover.html?category=designers">Pleated Silk Tunic</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Paris · Deadstock Habotai</p>
+            </div>
+          </article>
+
+          <!-- Item 7: Emerging Designers / Unisex / Streetwear -->
+          <article class="fashion-card" data-discovery-card data-category="designers unisex streetwear apparel men"
+            data-style="experimental" data-location="seoul" data-type="apparel">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80"
+                alt="Seongsu Modular Raw-Edge Vest" loading="lazy">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Seoul, Korea</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-7"
+                data-bookmark-title="Seongsu Modular Raw-Edge Vest" data-bookmark-category="Emerging Designers"
+                data-bookmark-location="Seoul, Korea"
+                data-bookmark-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=designers" aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Designers · Seoul</span>
+              <h3 class="card-title"><a href="discover.html?category=designers">Modular Raw-Edge Vest</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">Seoul · Micro Production</p>
+            </div>
+          </article>
+
+          <!-- Item 8: Men / Streetwear / Vintage -->
+          <article class="fashion-card" data-discovery-card data-category="men streetwear vintage apparel"
+            data-style="streetwear" data-location="new york" data-type="apparel">
+            <div class="card-media-wrap" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=700&q=80"
+                alt="Boxy Distressed Selvedge Jacket" loading="lazy">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">New York, USA</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="app-8"
+                data-bookmark-title="Boxy Distressed Selvedge Jacket" data-bookmark-category="Streetwear"
+                data-bookmark-location="New York, USA"
+                data-bookmark-image="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=700&q=80"
+                data-bookmark-type="apparel" data-bookmark-url="discover.html?category=streetwear"
+                aria-label="Bookmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-content">
+              <span class="kicker" style="font-size: 0.6875rem;">Streetwear · Men</span>
+              <h3 class="card-title"><a href="discover.html?category=streetwear">Distressed Selvedge Jacket</a></h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary);">NYC · Downtown Denim</p>
             </div>
           </article>
         </div>
 
         <!-- Empty State Fallback -->
         <div id="discoveryEmptyState" class="empty-results-box" style="display: none; margin-top: 2rem;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--accent-rust);">
-            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            style="color: var(--accent-rust);">
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
           </svg>
           <h3 style="font-size: 1.25rem;">No discoveries match this filter criteria</h3>
-          <p style="color: var(--text-secondary); max-width: 480px;">Try adjusting your category selection or resetting your filters to explore all pieces.</p>
+          <p style="color: var(--text-secondary); max-width: 480px;">Try adjusting your category selection or resetting
+            your filters to explore all pieces.</p>
           <button class="btn btn-secondary" data-action="clear-filters">Reset Category Filters</button>
         </div>
       </div>
@@ -488,7 +620,8 @@
           <div class="section-header-content">
             <span class="kicker">GEOGRAPHIC DISCOVERY</span>
             <h2 class="section-title">Explore Fashion Where It Happens.</h2>
-            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Fashion is tied to culture, architecture, and geography. Pinpoint creators, boutiques, and street scenes across the globe.</p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Fashion is tied to culture,
+              architecture, and geography. Pinpoint creators, boutiques, and street scenes across the globe.</p>
           </div>
           <a href="explore-map.html" class="btn btn-primary">Open Interactive Map →</a>
         </div>
@@ -504,7 +637,8 @@
         </div>
 
         <!-- Embedded Interactive Map Component -->
-        <div style="position: relative; height: 480px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-medium); box-shadow: var(--card-shadow);">
+        <div
+          style="position: relative; height: 480px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-medium); box-shadow: var(--card-shadow);">
           <div id="fashionMap" style="width: 100%; height: 100%;"></div>
         </div>
       </div>
@@ -513,13 +647,15 @@
     <!-- ==========================================
          7. EDITORIAL STORIES
          ========================================== -->
-    <section class="stories-preview-section section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <section class="stories-preview-section section-spacing"
+      style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
       <div class="container">
         <div class="section-header">
           <div class="section-header-content">
             <span class="kicker">FASHION JOURNALISM</span>
             <h2 class="section-title">Editorial Stories</h2>
-            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Long-form analysis, cultural dispatches, and material philosophy written with depth.</p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Long-form analysis,
+              cultural dispatches, and material philosophy written with depth.</p>
           </div>
           <a href="stories.html" class="btn btn-secondary">Read All Stories →</a>
         </div>
@@ -528,10 +664,17 @@
           <!-- Story 1 -->
           <article class="fashion-card story-card">
             <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="The Return of Quiet Tailoring" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+                alt="The Return of Quiet Tailoring" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Milan, Italy</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-1" data-bookmark-title="The Return of Quiet Tailoring" data-bookmark-category="Trend Report" data-bookmark-location="Milan, Italy" data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-1" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-1"
+                data-bookmark-title="The Return of Quiet Tailoring" data-bookmark-category="Trend Report"
+                data-bookmark-location="Milan, Italy"
+                data-bookmark-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+                data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-1" aria-label="Save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
@@ -540,17 +683,26 @@
                 <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">6 Min Read</span>
               </div>
               <h3 class="card-title"><a href="story-details.html?id=story-1">The Return of Quiet Tailoring</a></h3>
-              <p class="story-excerpt">How unstructured double-breasted blazers and heavy wools are reclaiming fashion from fast logos.</p>
+              <p class="story-excerpt">How unstructured double-breasted blazers and heavy wools are reclaiming fashion
+                from fast logos.</p>
             </div>
           </article>
 
           <!-- Story 2 -->
           <article class="fashion-card story-card">
             <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="Inside Seoul Independent Scene" loading="lazy">
-              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Seoul, South Korea</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-2" data-bookmark-title="Inside Seoul's Independent Fashion Scene" data-bookmark-category="Culture" data-bookmark-location="Seoul, South Korea" data-bookmark-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-2" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+                alt="Inside Seoul Independent Scene" loading="lazy">
+              <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">Seoul, South
+                Korea</span>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-2"
+                data-bookmark-title="Inside Seoul's Independent Fashion Scene" data-bookmark-category="Culture"
+                data-bookmark-location="Seoul, South Korea"
+                data-bookmark-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+                data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-2" aria-label="Save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
@@ -558,18 +710,27 @@
                 <span class="kicker" style="font-size: 0.6875rem;">Culture</span>
                 <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">8 Min Read</span>
               </div>
-              <h3 class="card-title"><a href="story-details.html?id=story-2">Inside Seoul's Independent Fashion Scene</a></h3>
-              <p class="story-excerpt">Exploring Seongsu-dong’s rise as the vanguard of youth subculture and micro-production.</p>
+              <h3 class="card-title"><a href="story-details.html?id=story-2">Inside Seoul's Independent Fashion
+                  Scene</a></h3>
+              <p class="story-excerpt">Exploring Seongsu-dong’s rise as the vanguard of youth subculture and
+                micro-production.</p>
             </div>
           </article>
 
           <!-- Story 3 -->
           <article class="fashion-card story-card">
             <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Why Vintage Is Becoming a Design Language" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+                alt="Why Vintage Is Becoming a Design Language" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">London, UK</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-3" data-bookmark-title="Why Vintage Is Becoming a Design Language" data-bookmark-category="Vintage" data-bookmark-location="London, UK" data-bookmark-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-3" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-3"
+                data-bookmark-title="Why Vintage Is Becoming a Design Language" data-bookmark-category="Vintage"
+                data-bookmark-location="London, UK"
+                data-bookmark-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+                data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-3" aria-label="Save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
@@ -577,18 +738,27 @@
                 <span class="kicker" style="font-size: 0.6875rem;">Vintage Philosophy</span>
                 <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">5 Min Read</span>
               </div>
-              <h3 class="card-title"><a href="story-details.html?id=story-3">Why Vintage Is Becoming a Design Language</a></h3>
-              <p class="story-excerpt">Archival collecting has transitioned from a niche hobby into the primary research foundation for modern luxury.</p>
+              <h3 class="card-title"><a href="story-details.html?id=story-3">Why Vintage Is Becoming a Design
+                  Language</a></h3>
+              <p class="story-excerpt">Archival collecting has transitioned from a niche hobby into the primary research
+                foundation for modern luxury.</p>
             </div>
           </article>
 
           <!-- Story 4 -->
           <article class="fashion-card story-card">
             <div class="card-media-wrap">
-              <img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=800&q=80" alt="The New Generation of Streetwear" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=800&q=80"
+                alt="The New Generation of Streetwear" loading="lazy">
               <span class="badge badge-location" style="position: absolute; top: 1rem; left: 1rem;">New York, USA</span>
-              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-4" data-bookmark-title="The New Generation of Streetwear" data-bookmark-category="Street Style" data-bookmark-location="New York, USA" data-bookmark-image="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=800&q=80" data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-4" aria-label="Save">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <button class="btn-bookmark" data-action="bookmark" data-bookmark-id="story-4"
+                data-bookmark-title="The New Generation of Streetwear" data-bookmark-category="Street Style"
+                data-bookmark-location="New York, USA"
+                data-bookmark-image="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=800&q=80"
+                data-bookmark-type="story" data-bookmark-url="story-details.html?id=story-4" aria-label="Save">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
               </button>
             </div>
             <div class="card-content">
@@ -597,7 +767,8 @@
                 <span class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">7 Min Read</span>
               </div>
               <h3 class="card-title"><a href="story-details.html?id=story-4">The New Generation of Streetwear</a></h3>
-              <p class="story-excerpt">Downtown NYC designers are rejecting graphic branding in favor of distressed raw selvedge and modular hardware.</p>
+              <p class="story-excerpt">Downtown NYC designers are rejecting graphic branding in favor of distressed raw
+                selvedge and modular hardware.</p>
             </div>
           </article>
         </div>
@@ -609,20 +780,24 @@
     <!-- ==========================================
          9. FINAL CTA BANNER
          ========================================== -->
-    <section class="final-cta-section section-spacing" style="text-align: center; border-top: 1px solid var(--border-subtle);">
+    <section class="final-cta-section section-spacing"
+      style="text-align: center; border-top: 1px solid var(--border-subtle);">
       <div class="container container-narrow">
         <span class="kicker" style="margin-bottom: 1rem;">GLOBAL FASHION HORIZON</span>
-        <h2 class="section-title" style="font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem;">
+        <h2 class="section-title"
+          style="font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem;">
           Your Next Fashion Discovery Is Somewhere Out There.
         </h2>
         <p class="lead-text" style="margin-bottom: 2.5rem; max-width: 620px; margin-left: auto; margin-right: auto;">
-          Join thousands of global fashion enthusiasts, stylists, archivists, and filmmakers uncovering what fashion is becoming.
+          Join thousands of global fashion enthusiasts, stylists, archivists, and filmmakers uncovering what fashion is
+          becoming.
         </p>
-        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-          <a href="discover.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1rem;">
+        <div class="final-cta-btn-group cta-btn-group"
+          style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="discover.html" class="btn btn-primary" style="padding: 1rem 2.25rem; font-size: 1rem;">
             Explore MODE / ATLAS
           </a>
-          <a href="creators.html" class="btn btn-secondary" style="padding: 1rem 2rem; font-size: 1rem;">
+          <a href="creators.html" class="btn btn-secondary" style="padding: 1rem 2.25rem; font-size: 1rem;">
             Meet The Creators
           </a>
         </div>
@@ -647,13 +822,16 @@
             Discover What Fashion Is Becoming.
           </p>
           <p style="font-size: 0.8125rem; color: var(--text-muted); max-width: 320px; margin-bottom: 1.5rem;">
-            A global exploration platform dedicated to creator video feeds, fashion journalism, interactive mapping, and curated apparel archives.
+            A global exploration platform dedicated to creator video feeds, fashion journalism, interactive mapping, and
+            curated apparel archives.
           </p>
 
           <!-- Newsletter Dispatches -->
           <form data-form="newsletter" style="display: flex; gap: 0.5rem; max-width: 340px;">
-            <input type="email" placeholder="Your email for dispatches..." required class="form-input" style="padding: 0.6rem 0.9rem; font-size: 0.8125rem;">
-            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.1rem; font-size: 0.8125rem;">Join</button>
+            <input type="email" placeholder="Your email for dispatches..." required class="form-input"
+              style="padding: 0.6rem 0.9rem; font-size: 0.8125rem;">
+            <button type="submit" class="btn btn-primary"
+              style="padding: 0.6rem 1.1rem; font-size: 0.8125rem;">Join</button>
           </form>
         </div>
 
@@ -703,13 +881,24 @@
         </div>
         <div class="footer-social-links">
           <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
           </a>
           <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg>
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X / Twitter">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -724,12 +913,18 @@
   <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="globalSearchInput">
     <div class="search-modal-container">
       <div class="search-modal-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);">
-          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          style="color: var(--text-muted);">
+          <circle cx="11" cy="11" r="8" />
+          <path d="M21 21l-4.35-4.35" />
         </svg>
-        <input type="search" id="globalSearchInput" class="search-input-field" placeholder="Search apparel, creators, places, trends, collections..." autocomplete="off">
+        <input type="search" id="globalSearchInput" class="search-input-field"
+          placeholder="Search apparel, creators, places, trends, collections..." autocomplete="off">
         <button class="btn-icon" id="searchModalClose" style="width: 32px; height: 32px;" aria-label="Close search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
         </button>
       </div>
 
@@ -758,7 +953,8 @@
       </div>
 
       <div class="search-modal-footer">
-        <span>Press <kbd style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 3px;">ESC</kbd> to exit</span>
+        <span>Press <kbd style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 3px;">ESC</kbd> to
+          exit</span>
         <span>MODE / ATLAS Index</span>
       </div>
     </div>
@@ -770,10 +966,14 @@
     <div class="saved-drawer-header">
       <div>
         <span class="kicker">MY SELECTIONS</span>
-        <h3 style="font-size: 1.25rem; margin-top: 0.2rem;">Saved Discoveries <span id="savedDrawerCount">(0)</span></h3>
+        <h3 style="font-size: 1.25rem; margin-top: 0.2rem;">Saved Discoveries <span id="savedDrawerCount">(0)</span>
+        </h3>
       </div>
       <button class="btn-icon" data-action="close-saved" aria-label="Close saved drawer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
     </div>
 
@@ -791,7 +991,8 @@
 
     <!-- Drawer Footer Actions -->
     <div class="saved-drawer-footer">
-      <button class="btn btn-secondary" id="savedClearAllBtn" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;">Clear All</button>
+      <button class="btn btn-secondary" id="savedClearAllBtn" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;">Clear
+        All</button>
       <a href="discover.html" class="btn btn-primary" style="font-size: 0.8125rem;">Discover More</a>
     </div>
   </aside>
@@ -799,22 +1000,30 @@
   <!-- Video Player Cinema Modal -->
   <div class="video-modal" id="videoPlayerModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
     <div class="video-modal-content">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle); background-color: var(--bg-primary);">
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle); background-color: var(--bg-primary);">
         <div style="display: flex; align-items: center; gap: 0.75rem;">
           <span class="badge badge-location" id="videoModalLocation">Tokyo · Street Style</span>
           <span class="font-mono" style="font-size: 0.75rem; color: var(--text-muted);">Creator Video Dispatch</span>
         </div>
-        <button class="btn-icon" id="videoModalClose" style="width: 32px; height: 32px;" aria-label="Close video player">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <button class="btn-icon" id="videoModalClose" style="width: 32px; height: 32px;"
+          aria-label="Close video player">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
         </button>
       </div>
 
       <div class="video-player-container">
         <video id="modalHtmlVideo" class="video-player-media" loop playsinline></video>
-        
+
         <!-- Center Play/Pause Trigger -->
-        <button class="video-overlay-play-center video-play-state-icon" data-action="toggle-video-play" aria-label="Play/Pause Video">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <button class="video-overlay-play-center video-play-state-icon" data-action="toggle-video-play"
+          aria-label="Play/Pause Video">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3" />
+          </svg>
         </button>
 
         <!-- Custom Scrubber Bar & Controls -->
@@ -825,10 +1034,15 @@
           <div class="video-controls-row">
             <div style="display: flex; align-items: center; gap: 1rem;">
               <button data-action="toggle-video-play" class="video-play-state-icon" aria-label="Play or Pause">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
               </button>
               <button data-action="toggle-video-mute" class="video-mute-icon" aria-label="Mute or Unmute">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                </svg>
               </button>
               <span class="font-mono" style="font-size: 0.75rem;">01:14 / 02:48</span>
             </div>
@@ -842,24 +1056,37 @@
       <div class="video-modal-info">
         <div>
           <h3 id="videoModalTitle" style="font-size: 1.25rem; font-weight: 600;">Inside a Tokyo Vintage Archive</h3>
-          <span style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem; display: block;">Curated by <strong id="videoModalCreator" style="color: var(--text-primary);">Mika Tanaka</strong></span>
+          <span style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem; display: block;">Curated
+            by <strong id="videoModalCreator" style="color: var(--text-primary);">Mika Tanaka</strong></span>
         </div>
         <div style="display: flex; gap: 0.75rem; align-items: center;">
-          <button id="videoModalBookmarkBtn" class="btn btn-secondary" data-action="bookmark" style="font-size: 0.8125rem;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          <button id="videoModalBookmarkBtn" class="btn btn-secondary" data-action="bookmark"
+            style="font-size: 0.8125rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
             <span class="bookmark-label">Save Discovery</span>
           </button>
-          <a id="videoModalDetailsLink" href="video-details.html?id=video-1" class="btn btn-primary" style="font-size: 0.8125rem;">Full Details →</a>
+          <a id="videoModalDetailsLink" href="video-details.html?id=video-1" class="btn btn-primary"
+            style="font-size: 0.8125rem;">Full Details →</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
   <!-- Toast Feedback Area -->
   <div class="toast-container" aria-live="polite"></div>
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/bookmarks.js"></script>
   <script src="assets/js/search.js"></script>
@@ -868,4 +1095,5 @@
   <script src="assets/js/map.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

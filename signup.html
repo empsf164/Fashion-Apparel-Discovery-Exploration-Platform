@@ -68,11 +68,27 @@
         <div class="form-row-2col" style="gap: 1rem; margin-bottom: 0.5rem;">
           <div class="form-group">
             <label for="signupPassword" class="form-label">Password</label>
-            <input type="password" id="signupPassword" required class="form-input" placeholder="••••••••" autocomplete="new-password">
+            <div class="password-field-wrap">
+              <input type="password" id="signupPassword" required class="form-input" placeholder="••••••••" autocomplete="new-password">
+              <button type="button" class="password-toggle-btn" aria-label="Show password">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="form-group">
             <label for="signupConfirm" class="form-label">Confirm Password</label>
-            <input type="password" id="signupConfirm" required class="form-input" placeholder="••••••••" autocomplete="new-password">
+            <div class="password-field-wrap">
+              <input type="password" id="signupConfirm" required class="form-input" placeholder="••••••••" autocomplete="new-password">
+              <button type="button" class="password-toggle-btn" aria-label="Show password">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -122,6 +138,12 @@
       </div>
     </div>
   </main>
+
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <div class="toast-container"></div>
 
