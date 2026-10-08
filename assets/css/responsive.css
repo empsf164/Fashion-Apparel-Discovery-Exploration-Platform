@@ -205,7 +205,117 @@
     margin-bottom: 1.75rem;
   }
 
-  .hero-grid,
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.25rem !important;
+    width: 100% !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 7.5vw, 3rem) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -0.02em !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    word-break: break-word;
+  }
+
+  .hero-content .lead-text {
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    margin: 0.85rem 0 1.75rem !important;
+    max-width: 100% !important;
+  }
+
+  .hero-actions,
+  .hero-btn-group {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+    align-items: stretch !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .hero-actions .btn,
+  .hero-btn-group .btn {
+    width: 100% !important;
+    min-width: 100% !important;
+    min-height: 50px !important;
+    padding: 0.9rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Equal 3-Column Hero Stats Bar on Mobile */
+  .hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid var(--border-subtle) !important;
+  }
+
+  .hero-stats .stat-item {
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .hero-stats .stat-number {
+    font-family: var(--font-mono) !important;
+    font-size: clamp(1.25rem, 5vw, 1.7rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-stats .stat-label {
+    font-size: clamp(0.65rem, 2.2vw, 0.75rem) !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    margin-top: 0.25rem !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Hero Media Card Composition on Mobile */
+  .hero-media-composition {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+  }
+
+  .hero-media-composition .fashion-card {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-media-composition .card-media-wrap {
+    aspect-ratio: 4 / 3 !important;
+    min-height: 240px !important;
+    max-height: 340px !important;
+    height: auto !important;
+  }
+
+  .hero-media-composition .card-media-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
   .story-cover-grid,
   .collections-item-grid,
   .contact-split-grid,
@@ -344,13 +454,11 @@
   }
 
   /* Video Hero Card Responsive Alignment */
-  .video-hero-card,
-  .fashion-card:has(.badge-duration) {
+  .video-hero-card {
     overflow: hidden !important;
   }
 
-  .video-hero-card .card-media-wrap,
-  .fashion-card:has(.badge-duration) .card-media-wrap {
+  .video-hero-card .card-media-wrap {
     min-height: 480px !important;
     height: auto !important;
   }
@@ -453,8 +561,21 @@
   }
 
   .hero-title {
-    font-size: clamp(2rem, 9vw, 2.5rem);
-    line-height: 1.1;
+    font-size: clamp(1.9rem, 8.5vw, 2.35rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-stats {
+    gap: 0.5rem !important;
+  }
+
+  .hero-stats .stat-number {
+    font-size: clamp(1.15rem, 4.6vw, 1.45rem) !important;
+  }
+
+  .hero-stats .stat-label {
+    font-size: clamp(0.6rem, 2vw, 0.7rem) !important;
+    letter-spacing: 0.04em !important;
   }
 
   .section-title {

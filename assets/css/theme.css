@@ -40,6 +40,11 @@
 
   /* Header Height */
   --header-height: 78px;
+
+  /* Brand Color System Tokens */
+  --color-brand: #c85a32;
+  --brand-primary: #c85a32;
+  --color-brand-slash: #c85a32;
 }
 
 /* ==========================================

@@ -166,6 +166,41 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+}
+
+.hero-stats .stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats .stat-number {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.hero-stats .stat-number.stat-highlight {
+  color: var(--accent-rust);
+}
+
+.hero-stats .stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.35rem;
+}
+
 .story-cover-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -384,8 +419,12 @@ h1, h2, h3, h4, h5, h6 {
   height: var(--header-height);
 }
 
-/* Brand Logo */
-.brand-logo {
+/* Brand Logo — Consistent Across All Pages */
+.brand-logo,
+a.brand-logo,
+.brand-logo:visited,
+.brand-logo:active,
+.brand-logo:focus {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -393,14 +432,30 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.15rem;
   font-weight: var(--fw-bold);
   letter-spacing: 0.12em;
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
   text-transform: uppercase;
+  text-decoration: none !important;
   white-space: nowrap;
   flex-shrink: 0;
+  transition: opacity var(--transition-fast);
 }
 
-.brand-logo .brand-slash {
-  color: var(--accent-rust);
+.brand-logo:hover,
+a.brand-logo:hover {
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+  opacity: 0.85;
+}
+
+.brand-logo span,
+a.brand-logo span,
+.brand-name-full {
+  color: var(--text-primary) !important;
+}
+
+.brand-logo .brand-slash,
+a.brand-logo .brand-slash {
+  color: var(--accent-rust) !important;
   font-weight: var(--fw-light);
 }
 
@@ -2066,16 +2121,16 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------------------------------------------------------------------
    19. Authentication Links Hover Polish
    -------------------------------------------------------------------------- */
-.auth-card a,
-.auth-centered-page a,
+.auth-card a:not(.brand-logo),
+.auth-centered-page a:not(.brand-logo),
 .form-checkbox-label a {
   color: var(--accent-rust);
   text-decoration: none;
   transition: color var(--transition-fast), text-decoration var(--transition-fast), opacity var(--transition-fast);
 }
 
-.auth-card a:hover,
-.auth-centered-page a:hover,
+.auth-card a:not(.brand-logo):hover,
+.auth-centered-page a:not(.brand-logo):hover,
 .form-checkbox-label a:hover {
   text-decoration: underline !important;
   opacity: 0.85;
